@@ -1,0 +1,42 @@
+server: 
+  port: 7070
+  
+instance: 
+    hostname: localhost
+  
+#server registery under this name
+spring:
+  application:
+    name: cop-api-gateway
+  
+#Zuul routes. Here for /cop-training-microservices and login-microservices, we are routing to localhost:7070 with extra path after that..
+# serviceId as registed with Eureka. Enabled and used when ribbon.eureka.enabled is true.
+# url used when ribbon.eureka.enabled is false, serviceId is disabled.
+zuul: 
+   routes: 
+     cop-training-microservices: 
+               path: /copTraining/**
+               serviceId: COP-TRAINING-MICROSERVICES  
+              # url: http://xen-821.xavient.com:8082/
+               
+     login-microservices: 
+               path: /login/**
+               serviceId: LOGIN-MICROSERVICES
+              # url: http://xen-821.xavient.com:8081/
+             
+             
+#Ribbon is auto integrated with Zuul and for this project we are not using that.
+ribbon: 
+      eureka: 
+            enabled: true
+            
+#Discovery server access
+eureka: 
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+      healthcheck:
+      enabled: true
+      lease: 
+       duration: 5
+             

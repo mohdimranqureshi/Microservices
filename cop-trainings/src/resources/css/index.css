@@ -1,0 +1,115 @@
+
+
+body {
+	background: #eee !important;	
+}
+
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+
+}
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+
+	.trainerLink{
+		float: right;
+		margin: 20px 10px 0px 0px; 
+	}
+	.txtCenter{
+		text-align: center;
+	}
+	.trngData{
+		border: 1px solid;
+		padding: 10px;
+    box-shadow: 5px 10px;
+		margin: 20px auto;
+		background: #fff;
+		height: 240px;
+		margin-left: 50px;
+	}
+	.trnrData{
+		margin-top: 15px;
+		margin-left: 1px;
+	}
+	.signout-btn {
+    background: #f8ebe8;
+    border-radius: 2px;
+    color: #ba2d0b;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 36px;
+    margin: 13px 15px 0 0;
+    padding: 0 22px;
+    width: 108px;
+}
+.headerbg{
+	background-color: #286090;
+}
+.lgnForm{
+	background: #eee;
+	height: 100vh;
+	position: absolute;
+	width: 100%;
+}
+.login-header {
+	background: transparent;
+	height: 123px; 
+}
+.editCenter{
+	margin-left: 169px;
+	margin-top: 30px;
+  margin-right: 160px;
+}
+.userData{
+	padding-top: 20px;
+	margin-right: 10px;
+}
+.trngLvl{
+	margin: 10px;
+	margin-left: 0px;
+}
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+.searchTxt{
+	float: right;
+	margin-right: 65px;
+}
+.serachIcn{
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.cnlBtn{
+	margin-left: 50px;
+}
+
+
